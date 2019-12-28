@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -37,43 +36,25 @@
             this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.recog = new MaterialSkin.Controls.MaterialRaisedButton();
             this.disable = new MaterialSkin.Controls.MaterialRaisedButton();
             this.enable = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.materialTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.materialRaisedButton1);
             this.panel1.Controls.Add(this.materialLabel2);
             this.panel1.Controls.Add(this.materialDivider1);
-            this.panel1.Controls.Add(this.richTextBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(221, 620);
             this.panel1.TabIndex = 0;
-            // 
-            // materialRaisedButton1
-            // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(3, 131);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(185, 32);
-            this.materialRaisedButton1.TabIndex = 1;
-            this.materialRaisedButton1.Text = "materialRaisedButton1";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.UseWaitCursor = true;
             // 
             // materialLabel2
             // 
@@ -101,9 +82,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(36, 551);
+            this.richTextBox1.Location = new System.Drawing.Point(27, 86);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(131, 33);
+            this.richTextBox1.Size = new System.Drawing.Size(797, 395);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "-LOG-";
             // 
@@ -137,7 +118,6 @@
             // 
             // materialLabel1
             // 
-            this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -155,56 +135,28 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel3.Controls.Add(this.materialTabControl1);
+            this.panel3.Controls.Add(this.recog);
             this.panel3.Controls.Add(this.disable);
             this.panel3.Controls.Add(this.enable);
+            this.panel3.Controls.Add(this.richTextBox1);
             this.panel3.Location = new System.Drawing.Point(218, 98);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(901, 522);
             this.panel3.TabIndex = 2;
             // 
-            // materialTabControl1
+            // recog
             // 
-            this.materialTabControl1.AllowDrop = true;
-            this.materialTabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
-            this.materialTabControl1.Controls.Add(this.tabPage1);
-            this.materialTabControl1.Controls.Add(this.tabPage2);
-            this.materialTabControl1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.HotTrack = true;
-            this.materialTabControl1.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.materialTabControl1.ItemSize = new System.Drawing.Size(58, 25);
-            this.materialTabControl1.Location = new System.Drawing.Point(27, 79);
-            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabControl1.Multiline = true;
-            this.materialTabControl1.Name = "materialTabControl1";
-            this.materialTabControl1.RightToLeftLayout = true;
-            this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(840, 409);
-            this.materialTabControl1.TabIndex = 3;
-            this.materialTabControl1.UseWaitCursor = true;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(832, 376);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.UseWaitCursor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(832, 376);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.UseWaitCursor = true;
+            this.recog.Depth = 0;
+            this.recog.Enabled = false;
+            this.recog.Location = new System.Drawing.Point(320, 11);
+            this.recog.MouseState = MaterialSkin.MouseState.HOVER;
+            this.recog.Name = "recog";
+            this.recog.Primary = true;
+            this.recog.Size = new System.Drawing.Size(215, 41);
+            this.recog.TabIndex = 3;
+            this.recog.Text = "Recognize";
+            this.recog.UseVisualStyleBackColor = true;
+            this.recog.Click += new System.EventHandler(this.recog_Click);
             // 
             // disable
             // 
@@ -216,7 +168,7 @@
             this.disable.Primary = true;
             this.disable.Size = new System.Drawing.Size(215, 41);
             this.disable.TabIndex = 2;
-            this.disable.Text = "disable";
+            this.disable.Text = "Stop";
             this.disable.UseVisualStyleBackColor = true;
             this.disable.Click += new System.EventHandler(this.disable_Click);
             // 
@@ -249,7 +201,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.materialTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -264,12 +215,9 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
         private MaterialSkin.Controls.MaterialRaisedButton disable;
         private MaterialSkin.Controls.MaterialRaisedButton enable;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        public System.Windows.Forms.RichTextBox richTextBox1;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton2;
+        private MaterialSkin.Controls.MaterialRaisedButton recog;
     }
 }
 

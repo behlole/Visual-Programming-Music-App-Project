@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp11
 {
-    static class Program
+    static class Program2
     {
         /// <summary>
         /// The main entry point for the application.
@@ -18,5 +18,10 @@ namespace WindowsFormsApp11
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+
+        //public static void displayResult(string result)
+        //{
+        //    MessageBox.Show(result);
+        //}
     }
 }
